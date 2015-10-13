@@ -1,0 +1,28 @@
+$small-main: rgb(56, 171, 79);
+$small-second: rgb(62, 164, 65);
+
+$medium-main: rgb(192, 196, 68);
+$medium-second: rgb(192, 196, 68);
+
+$large-main: rgb(204, 40, 40) ;
+$large-second: rgb(140, 25, 25);
+
+
+.attention {
+  background-color: $large-main;
+  border-color: $large-second;
+}
+
+.attention-2 {
+  background-color: $medium-main;
+  border-color: $medium-second;
+}
+
+.active {
+  font-weight: bolder;
+  color:$small-main;
+}
+
+.outline {
+  border: 1px solid rgb(186, 0, 255) !important;
+}

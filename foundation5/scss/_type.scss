@@ -1,0 +1,54 @@
+
+$header-font-color: rgb(86, 43, 208);
+$gainsboro: rgb(147, 147, 147);
+$default-float: left;
+
+// We use these to style blockquotes
+$blockquote-background-color: rgb(233, 233, 233);
+$blockquote-font-color: scale-color($header-font-color, $lightness: 35%) !default;
+$blockquote-padding: rem-calc(9 20 0 19) !default;
+$blockquote-border: 6px solid $gainsboro !default;
+$blockquote-cite-font-size: rem-calc(13) !default;
+$blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%) !default;
+$blockquote-cite-link-color: $blockquote-cite-font-color !default;
+
+$paragraph-margin-bottom: 50px;
+$paragraph-line-height: 100%;
+
+$muted: rgb(129, 129, 129);
+
+/* Blockquotes */
+blockquote {
+  background: $blockquote-background-color;
+  margin: 0 0 $paragraph-margin-bottom;
+  padding: $blockquote-padding;
+  border-#{$default-float}: $blockquote-border;
+
+  cite {
+    display: block;
+    font-size: $blockquote-cite-font-size;
+    color: $blockquote-cite-font-color;
+    &:before {
+      content: "\2014 \0020";
+    }
+
+    a,
+    a:visited {
+      color: $blockquote-cite-link-color;
+    }
+  }
+}
+
+blockquote,
+blockquote p {
+  line-height: $paragraph-line-height;
+  color: $blockquote-font-color;
+}
+.attention-text {
+  color: $muted;
+
+  b {
+    color: $header-font-color;
+  }
+
+}

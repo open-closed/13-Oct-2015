@@ -1,0 +1,22 @@
+@import "type.scss";
+
+$mobile-width: 300px;
+$mobile-height: 500px;
+
+$desktop-width: 100%;
+$desktop-height: 100%;
+
+.mobile-view {
+  width: $mobile-width;
+  height: $mobile-height;
+  resize: horizontal;
+  overflow:auto;
+}
+
+.test-headline {
+  font-size: 78px;
+}
+
+.done {
+  color:rgb(27, 27, 27);
+}

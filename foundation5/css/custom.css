@@ -1,0 +1,57 @@
+/* Blockquotes */
+/* line 21, ../scss/_type.scss */
+blockquote {
+  background: #e9e9e9;
+  margin: 0 0 50px;
+  padding: rem-calc(9 20 0 19);
+  border-left: 6px solid #939393;
+}
+/* line 27, ../scss/_type.scss */
+blockquote cite {
+  display: block;
+  font-size: rem-calc(13);
+  color: #7c5add;
+}
+/* line 31, ../scss/_type.scss */
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+/* line 35, ../scss/_type.scss */
+blockquote cite a,
+blockquote cite a:visited {
+  color: #7c5add;
+}
+
+/* line 42, ../scss/_type.scss */
+blockquote,
+blockquote p {
+  line-height: 100%;
+  color: #9073e2;
+}
+
+/* line 47, ../scss/_type.scss */
+.attention-text {
+  color: #818181;
+}
+/* line 50, ../scss/_type.scss */
+.attention-text b {
+  color: #562bd0;
+}
+
+/* line 9, ../scss/custom.scss */
+.mobile-view {
+  width: 300px;
+  height: 500px;
+  resize: horizontal;
+  overflow: auto;
+}
+
+/* line 16, ../scss/custom.scss */
+.test-headline {
+  font-size: 78px;
+}
+
+/* line 20, ../scss/custom.scss */
+.done {
+  color: #1b1b1b;
+}

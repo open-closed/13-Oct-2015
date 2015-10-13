@@ -1,0 +1,22 @@
+/* line 11, ../scss/custom.scss */
+.attention {
+  background-color: #cc2828;
+  border-color: #8c1919;
+}
+
+/* line 16, ../scss/custom.scss */
+.attention-2 {
+  background-color: #c0c444;
+  border-color: #c0c444;
+}
+
+/* line 21, ../scss/custom.scss */
+.active {
+  font-weight: bolder;
+  color: #38ab4f;
+}
+
+/* line 26, ../scss/custom.scss */
+.outline {
+  border: 1px solid #ba00ff !important;
+}

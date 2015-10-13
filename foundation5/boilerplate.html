@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Zurb Foundation - Getting Started</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/neon.css">
+  <!--  <link rel="stylesheet" media="screen" href="themes/foundation/css/foundation.css"> -->
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- own styles -->
+  <link rel="stylesheet" media="screen" href="css/custom.css">
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/start/jquery-ui.css"rel="stylesheet" />
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+      <!--  open<br /> &nbsp;&nbsp;&nbsp; &lt;<span style="color: #0af; font-weight: bolder">&#47;</span>&gt; closed -->
+      <h2 style="color: #565656; font-size: 27px; line-height: 90%; padding-bottom: 20px">
+        &lt;open<span style="color:#694F90">|</span>closed &#47;&gt;
+      </h2>
+      <h1 style="padding-top: 100px">
+        <div style="font-size:12px; width: 100%; height:100%;">
+          <img src="img/foundation3.jpg" alt="taken from stylecraze.com" /> <br />
+        </div>
+      </h1>
+    </section>
+
+    <section class="slide">
+      <h2> Table Of Contents </h2>
+      <section>
+        <ol>
+          <li>Das 12 Spalten Layout</li>
+          <li>12 Spalten: Zurb Foundation
+            <ul>
+              <li>Grid Basic</li>
+              <li>Beispiele</li>
+              <li>Zurb Advanced</li>
+            </ul>
+          </li>
+          <li>Zurb Components</li>
+        </ol>
+      </section>
+    </section>
+
+
+    <section class="slide">
+      <h2>Das 12 Spalten Grid</h2>
+      <section style="background: url('img/karo.jpg')">
+        <div style="width:100%; min-height:100%">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <h1>Raster beste leben</h1>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+      </section>
+    </section>
+
+    <section class="slide">
+      <h2>Ein Grid muss her...</h2>
+      <section>
+        <ul>
+          <li class="done">Grids vereinfachen das Leben</li>
+          <li class="done">Ansatz: Tabellen</li> <!-- Smartphone, Übersichtlichkeit?-->
+        </ul>
+      </section>
+    </section>
+
+    <section class="slide">
+      <h2>Tabellen BeispielLayout</h2>
+      <section>
+        <div style="margin: 0 auto; padding-left: 30%">
+          <table style="border: 1px solid red" class="bordered">
+            <tr style="border: 1px solid red">
+              <td colspan="3">Header</td>
+            </tr>
+            <tr>
+              <td>
+                <table>
+                  <tr>
+                    <td style="border: 1px solid red"> Spalte1.1</td>
+                    <td style="border: 1px solid red">Spalte1.2</td>
+                  </tr>
+                </table>
+              </td>
+              <td style="border: 1px solid red">Spalte2</td>
+              <td style="border: 1px solid red">Spalte3</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <code style="font-size: 2rem">
+        &lt;table&gt; <br />
+        &nbsp;&nbsp;  &lt;tr&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td colspan=&quot;3&quot;&gt;Header&lt;/td&gt;<br />
+        &nbsp;&nbsp;&lt;/tr&gt;<br />
+        &nbsp;&nbsp;&lt;tr&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<br />
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;&lt;table&gt;<br />
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &lt;tr&gt;<br />
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;&lt;td&gt; Spalte1.1&lt;/td&gt;<br />
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;&lt;td&gt;Spalte1.2&lt;/td&gt;<br />
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &lt;/tr&gt;<br />
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;&lt;/table&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/td&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;  &lt;td&gt;Spalte2&lt;/td&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Spalte3&lt;/td&gt;<br />
+        &nbsp;&nbsp;&lt;/tr&gt;<br />
+        &lt;/table&gt;<br />
+      </code>
+      <!-- style="font-size: 2rem"> -->
+    </section>
+
+
+    <section class="slide">
+      <h2>Tabellen: Probleme</h2>
+      <section>
+        <ul>
+          <li class="done">Viele Probleme</li> <!-- CSS ausgereifter, populärer, besser -->
+          <li class="done">Code?</li>
+          <li class="done">Tablets?</li>
+          <li class="done">Smartphones?</li>
+          <li class="done">Tabellen zum Layouten?</li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="slide">
+      <h2>12 Spalten to the rescue!</h2>
+      <section>
+        <ul>
+          <li class="done">CSS in "Tabellenform"</li>
+          <li class="done"> Variationen: 12,16,24</li> <!-- Je mehr desto genauer -->
+          <li class="done">Column: Spalten des Grid </li>
+          <li class="done">Gutter: Padding zwischen den columns </li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="slide">
+      <h2>Das 12 Spalten Grid</h2>
+      <section>
+        <img src="img/grid.png" />
+      </section>
+    </section>
+
+
+    <section class="slide">
+      <h2>Zurb Foundation</h2>
+      <section>
+        <img src="img/zurb.svg" />
+      </section>
+    </section>
+
+
+    <section class="slide">
+      <h2>Zurb Foundation - 12-Grid Elemente</h2>
+      <section>
+        <ul>
+          <li class="done">Row: .row</li> <!-- bsp header -->
+          <li class="done">Column: .column / .columns </li>
+          <li class="done">Column-size: .small-# , .medium-#, .large-# </li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="slide">
+      <h2>Mobile First</h2>
+      <blockquote class="attention-text">
+        Foundation is mobile-first. Code for <b>small screens first</b>, and <b>larger</b> devices will <b>inherit</b>
+        those styles.
+        Customize for larger screens as necessary.
+      </blockquote>
+    </section>
+
+    <!-- index1 -->
+    <section class="slide">
+      <h2>Hello World</h2>
+      <section>
+        <iframe
+        src="12grid/index1.html"
+        class="mobile-view"
+        scrolling="no"
+        seamless="seamless"
+        ></iframe>
+      </section>
+    </section>
+
+    <!-- index2 -->
+    <section class="slide">
+      <h2>Die großen müssen teilen...</h2>
+      <section>
+        <iframe
+        src="12grid/index2.html"
+        class="mobile-view"
+        scrolling="no"
+        seamless="seamless"
+        ></iframe>
+      </section>
+    </section>
+
+    <!-- index3 -->
+    <section class="slide">
+      <h2>Es hat sich etwas eingenistet..</h2>
+      <section>
+        <iframe
+        src="12grid/index3.html"
+        class="mobile-view"
+        scrolling="no"
+        seamless="seamless"
+        ></iframe>
+      </section>
+    </section>
+
+    <!-- index4 -->
+    <section class="slide">
+      <h2>TEST</h2>
+
+      <section>
+        <div class="test-headline">
+          Was passiert hier?
+
+        </div>
+        <iframe id="test"
+        src="12grid/index4.html"
+        class="mobile-view"
+        scrolling="no"
+        seamless="seamless"
+        ></iframe>
+      </section>
+    </section>
+
+    <section class="slide">
+      <h2>Zurb Advanced Layouting</h2>
+
+      <section>
+        <ul>
+          <li class="done">Auffüllen von Spalten: small-offset-#</li>
+          <li class="done">Beenden von Reihen: column.end</li>
+          <li style="list-style: none"><img src="img/col-end.png" /></li>
+          <li class="done">Entfernen von guttern: row.collapse</li>
+          <li style="list-style: none"><img src="img/gutter-small.png" /><img src="img/gutter-large.png" /></li>
+          <li class="done">Zentrieren von Columns: small-centered</li>
+          <li class="done">...</li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="slide">
+      <h2>Neben basic styles...</h2>
+      <section>
+        <img src="img/tables.png" />
+
+      </section>
+    </section>
+
+    <section class="slide">
+      <h2>...</h2>
+      <section>
+        <img src="img/buttons.png" />
+
+      </section>
+    </section>
+
+    <section class="slide">
+      <h2>Ende...</h2>
+      <section>
+        <h1>Eine Frage noch...</h1>
+
+        <section>
+          Nützliches:
+          https://sudheerdev.github.io/Foundation5CheatSheet/
+          http://foundation.zurb.com/docs/
+        </section>
+      </section>
+    </section>
+
+<!--
+    <section class="slide">
+      <h2>Do i need rows..</h2>
+      <section>
+        <iframe
+        src="12grid/rowsvsnorows.html"
+        class="mobile-view"
+        scrolling="no"
+        seamless="seamless"
+        ></iframe>
+      </section>
+    </section> -->
+
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+  <!-- Required JS files. -->
+  <script src="jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script src="core/deck.core.js"></script>
+
+  <!-- Extension JS files. Add or remove as needed. -->
+  <script src="extensions/menu/deck.menu.js"></script>
+  <script src="extensions/goto/deck.goto.js"></script>
+  <script src="extensions/status/deck.status.js"></script>
+  <script src="extensions/navigation/deck.navigation.js"></script>
+  <script src="extensions/scale/deck.scale.js"></script>
+
+  <!-- Initialize the deck. You can put this in an external file if desired. -->
+  <script>
+  $(function() {
+    $.deck('.slide');
+    $(".resizable").resizable({
+      animate: true,
+      animateEasing: 'swing',
+      imateDuration: 500
+    });
+
+    //  $("#test").css('display', 'none');
+  });
+  </script>
+</body>
+</html>
