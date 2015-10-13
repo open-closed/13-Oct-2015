@@ -1,4 +1,4 @@
-> cd foundation5
-> npm install -g http-server
-> http-server
+> cd foundation5 <br />
+> npm install -g http-server <br />
+> http-server <br />
 > open localhost:8081/boilerpalte.html
